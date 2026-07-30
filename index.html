@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rogue</title>
+    <meta name="description" content="Rogue — modern systems, quietly running." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+  </head>
+  <body class="is-booting">
+    <div class="boot" id="boot">
+      <p class="boot-kicker">initialising</p>
+      <p class="boot-title">Rogue</p>
+      <p class="boot-line" id="boot-line">calibrating mesh…</p>
+      <div class="boot-bar"><span id="boot-bar"></span></div>
+    </div>
+
+    <canvas id="web" aria-hidden="true"></canvas>
+    <div class="vignette" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <div class="frame" aria-hidden="true">
+      <span class="frame-corner tl"></span>
+      <span class="frame-corner tr"></span>
+      <span class="frame-corner bl"></span>
+      <span class="frame-corner br"></span>
+    </div>
+
+    <header class="chrome chrome-top">
+      <div>
+        <p class="chrome-label">node mesh</p>
+        <p class="chrome-value" id="stat-nodes">00 live</p>
+      </div>
+      <div class="chrome-center">
+        <p class="chrome-label">status</p>
+        <p class="chrome-value" id="stat-status">booting</p>
+      </div>
+      <div class="chrome-right">
+        <p class="chrome-label">clock</p>
+        <p class="chrome-value" id="stat-clock">00:00:00</p>
+      </div>
+    </header>
+
+    <div class="nodes" id="nodes" aria-label="Capabilities"></div>
+
+    <main class="stage">
+      <h1 class="core">
+        <span class="core-mark" aria-hidden="true"></span>
+        <span class="core-word">Rogue</span>
+        <span class="core-sub" id="core-sub">sys.web // booting</span>
+      </h1>
+    </main>
+
+    <aside class="panel" id="panel" aria-live="polite">
+      <button class="panel-close" id="panel-close" type="button" aria-label="Close">
+        esc
+      </button>
+      <p class="panel-kicker" id="panel-kicker">select a node</p>
+      <p class="panel-title" id="panel-title">The web</p>
+      <p class="panel-body" id="panel-body">
+        Everything Rogue touches lives out here. Drag a point. Open one.
+      </p>
+      <div class="panel-meta" id="panel-meta" hidden>
+        <div>
+          <span>id</span>
+          <strong id="meta-id">—</strong>
+        </div>
+        <div>
+          <span>load</span>
+          <strong id="meta-load">—</strong>
+        </div>
+        <div>
+          <span>links</span>
+          <strong id="meta-links">—</strong>
+        </div>
+      </div>
+      <p class="panel-links" id="panel-links" hidden></p>
+    </aside>
+
+    <aside class="readout" id="readout" aria-hidden="true">
+      <p id="readout-coords">x 000 · y 000</p>
+      <p id="readout-near">nearest —</p>
+      <p id="readout-dist">dist —</p>
+    </aside>
+
+    <div class="toast" id="toast" hidden></div>
+
+    <footer class="chrome chrome-bottom">
+      <p>drag · click · esc</p>
+      <div class="chrome-actions">
+        <button type="button" class="mute" id="mute" aria-pressed="false">sound on</button>
+        <span id="stat-traffic">traffic 0.0</span>
+      </div>
+    </footer>
+
+    <script src="/scripts/main.js" type="module"></script>
+  </body>
+</html>
