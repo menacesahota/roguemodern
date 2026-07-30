@@ -78,7 +78,9 @@ function textToHtmlBody(text) {
     .trim()
     .split(/\n{2,}/)
     .map((block) => {
-      const lines = escapeHtml(block).replaceAll("\n", "<br />\n");
+      let lines = escapeHtml(block).replaceAll("\n", "<br />\n");
+      // Bold the call-to-action YES (word boundary, case-sensitive as written)
+      lines = lines.replace(/\bYES\b/g, "<strong>YES</strong>");
       return `<p style="margin:0 0 14px 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#111111;">${lines}</p>`;
     })
     .join("\n");
