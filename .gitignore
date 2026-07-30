@@ -6,3 +6,5 @@ dist
 !.env.example
 .vercel
 *.log
+outreach/.m365-secrets.local
+outreach/logs/

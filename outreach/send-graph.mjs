@@ -46,7 +46,9 @@ const outboxPath = process.argv[2];
 if (!outboxPath) fail("Usage: node outreach/send-graph.mjs <outbox.json>");
 
 const absolute = resolve(outboxPath);
-const items = JSON.parse(readFileSync(absolute, "utf8"));
+const items = JSON.parse(
+  readFileSync(absolute, "utf8").replace(/^\uFEFF/, "")
+);
 if (!Array.isArray(items)) fail("Outbox must be a JSON array");
 
 const batch = items.slice(0, MAX_SENDS);
