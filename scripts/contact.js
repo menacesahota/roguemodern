@@ -20,13 +20,13 @@ export async function submitLead({ name, email }) {
     throw new Error("Enter a valid email.");
   }
 
-  const res = await fetch(`${supabaseUrl.replace(/\/$/, "")}/rest/v1/leads`, {
+  const endpoint = `${supabaseUrl.replace(/\/$/, "")}/functions/v1/inbound`;
+  const res = await fetch(endpoint, {
     method: "POST",
     headers: {
       apikey: supabaseAnonKey,
       Authorization: `Bearer ${supabaseAnonKey}`,
       "Content-Type": "application/json",
-      Prefer: "return=minimal",
     },
     body: JSON.stringify({
       name: cleanName,
@@ -36,8 +36,8 @@ export async function submitLead({ name, email }) {
     }),
   });
 
+  const data = await res.json().catch(() => ({}));
   if (!res.ok) {
-    const detail = await res.text().catch(() => "");
-    throw new Error(detail || `Signal failed (${res.status}).`);
+    throw new Error(data.error || `Signal failed (${res.status}).`);
   }
 }

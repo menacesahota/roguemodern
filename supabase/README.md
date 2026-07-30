@@ -1,20 +1,26 @@
-# Website inbound form → Supabase
+# Website inbound form → Supabase + email
 
-## 1. Create the table
-In the Supabase SQL editor, run:
+## What happens on submit
+1. Browser posts to Edge Function `inbound`
+2. Lead is saved to `leads`
+3. `01@roguemodern.com` gets a notification
+4. The visitor gets a short confirmation email
 
-`supabase/migrations/20260730140000_leads.sql`
+## Secrets (Supabase Edge Function)
+Set in project → Edge Functions → Secrets (or CLI):
 
-## 2. Local env
-Copy `.env.example` to `.env` and fill:
+- `AZURE_TENANT_ID`
+- `AZURE_CLIENT_ID`
+- `AZURE_CLIENT_SECRET`
+- `ROGUE_FROM_EMAIL` = `01@roguemodern.com`
+- `ROGUE_NOTIFY_EMAIL` = `01@roguemodern.com` (optional override)
+- `SUPABASE_SERVICE_ROLE_KEY` (usually auto-injected as `SUPABASE_SERVICE_ROLE_KEY`)
+- `SUPABASE_URL` (usually auto-injected)
 
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY` (Project Settings → API → anon public)
+## Deploy function
+```bash
+supabase functions deploy inbound --project-ref zooebajytjpospjvdydh
+```
 
-## 3. GitHub Pages build secrets
-Repo → Settings → Secrets and variables → Actions:
-
-- `VITE_SUPABASE_URL`
-- `VITE_SUPABASE_ANON_KEY`
-
-The Pages workflow injects these at build time.
+## Site env
+`VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY` in `.env` and GitHub Actions secrets.
