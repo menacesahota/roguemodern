@@ -19,8 +19,7 @@ Looks 2008–2015, not mobile-friendly, Flash / “Best viewed in…”, clutter
 - Rotate town + trade each day (London boroughs, Home Counties, then wider UK).
 - Skip anyone already in `outreach/prospects.csv` or `outreach/logs/sends.csv`.
 - Verify the dated clue on the live site before writing the email.
-- Prefer a real contact email from the site; otherwise a credible `info@` / `enquiries@` only when that address is published.
-- Cap **10 sends** per day. Never blast more.
+- Never use long hyphens (em/en dashes). Use a normal `-` only.
 
 ## Email voice
 From display: **Mani · Rogue** / `01@roguemodern.com`  

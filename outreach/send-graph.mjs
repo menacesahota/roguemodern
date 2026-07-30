@@ -64,6 +64,15 @@ if (!Array.isArray(items)) fail("Outbox must be a JSON array");
 const batch = items.slice(0, MAX_SENDS);
 if (batch.length === 0) fail("Outbox is empty");
 
+function normalizeDashes(text) {
+  return String(text)
+    .replaceAll("\u2014", "-") // em dash —
+    .replaceAll("\u2013", "-") // en dash –
+    .replaceAll("\u2212", "-") // minus −
+    .replaceAll("\u2010", "-") // hyphen ‐
+    .replaceAll("\u2011", "-"); // non-breaking hyphen
+}
+
 function escapeHtml(s) {
   return String(s)
     .replaceAll("&", "&amp;")
@@ -73,7 +82,7 @@ function escapeHtml(s) {
 }
 
 function textToHtmlBody(text) {
-  const parts = String(text)
+  const parts = normalizeDashes(text)
     .replace(/\r\n/g, "\n")
     .trim()
     .split(/\n{2,}/)
@@ -89,7 +98,7 @@ function textToHtmlBody(text) {
 
 function buildHtml(item) {
   const body = item.bodyHtml
-    ? item.bodyHtml
+    ? normalizeDashes(item.bodyHtml)
     : textToHtmlBody(stripTrailingPlainSignature(item.bodyText));
   return `<!DOCTYPE html>
 <html>
@@ -105,12 +114,9 @@ function buildHtml(item) {
 }
 
 function stripTrailingPlainSignature(text) {
-  return String(text)
+  return normalizeDashes(text)
     .replace(/\r\n/g, "\n")
-    .replace(
-      /\n*—\s*\n+Mani[\s\S]*$/i,
-      ""
-    )
+    .replace(/\n*[-—]\s*\n+Mani[\s\S]*$/i, "")
     .trimEnd();
 }
 
@@ -137,7 +143,7 @@ async function getToken() {
 async function sendMail(token, item) {
   const payload = {
     message: {
-      subject: item.subject,
+      subject: normalizeDashes(item.subject),
       body: {
         contentType: "HTML",
         content: buildHtml(item),
