@@ -20,16 +20,26 @@
  *   }
  * ]
  *
- * Hard cap: 10 sends per run.
+ * Hard cap: 10 sends per run. Appends HTML signature automatically.
  */
 import { readFileSync, appendFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const MAX_SENDS = 10;
 const FROM = process.env.ROGUE_FROM_EMAIL || "01@roguemodern.com";
 const TENANT = process.env.AZURE_TENANT_ID;
 const CLIENT_ID = process.env.AZURE_CLIENT_ID;
 const CLIENT_SECRET = process.env.AZURE_CLIENT_SECRET;
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const SIGNATURE_HTML = readFileSync(
+  resolve(__dirname, "email-signature.html"),
+  "utf8"
+)
+  .replace(/^\uFEFF/, "")
+  .replace(/<!--[\s\S]*?-->/g, "")
+  .trim();
 
 function fail(msg) {
   console.error(msg);
@@ -53,6 +63,54 @@ if (!Array.isArray(items)) fail("Outbox must be a JSON array");
 
 const batch = items.slice(0, MAX_SENDS);
 if (batch.length === 0) fail("Outbox is empty");
+
+function escapeHtml(s) {
+  return String(s)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function textToHtmlBody(text) {
+  const parts = String(text)
+    .replace(/\r\n/g, "\n")
+    .trim()
+    .split(/\n{2,}/)
+    .map((block) => {
+      const lines = escapeHtml(block).replaceAll("\n", "<br />\n");
+      return `<p style="margin:0 0 14px 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#111111;">${lines}</p>`;
+    })
+    .join("\n");
+  return parts;
+}
+
+function buildHtml(item) {
+  const body = item.bodyHtml
+    ? item.bodyHtml
+    : textToHtmlBody(stripTrailingPlainSignature(item.bodyText));
+  return `<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" /></head>
+<body style="margin:0;padding:0;background:#ffffff;">
+  <div style="max-width:560px;padding:8px 4px 24px 4px;">
+    ${body}
+    <div style="height:22px;line-height:22px;font-size:1px;">&nbsp;</div>
+    ${SIGNATURE_HTML}
+  </div>
+</body>
+</html>`;
+}
+
+function stripTrailingPlainSignature(text) {
+  return String(text)
+    .replace(/\r\n/g, "\n")
+    .replace(
+      /\n*—\s*\n+Mani[\s\S]*$/i,
+      ""
+    )
+    .trimEnd();
+}
 
 async function getToken() {
   const body = new URLSearchParams({
@@ -79,8 +137,8 @@ async function sendMail(token, item) {
     message: {
       subject: item.subject,
       body: {
-        contentType: "Text",
-        content: item.bodyText,
+        contentType: "HTML",
+        content: buildHtml(item),
       },
       toRecipients: [
         {
@@ -132,7 +190,7 @@ const token = await getToken();
 let sent = 0;
 
 for (const item of batch) {
-  if (!item.to || !item.subject || !item.bodyText) {
+  if (!item.to || !item.subject || !(item.bodyText || item.bodyHtml)) {
     console.warn("Skipping incomplete item:", item);
     continue;
   }
