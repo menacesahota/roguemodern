@@ -93,46 +93,56 @@
     <div class="toast" id="toast" hidden></div>
 
     <section class="inbound" id="inbound" aria-label="Work with Rogue">
-      <p class="inbound-kicker">inbound // signal</p>
-      <form class="inbound-form" id="inbound-form" novalidate>
-        <label class="inbound-field">
-          <span>name</span>
+      <button type="button" class="inbound-toggle" id="inbound-toggle" aria-expanded="false">
+        Work with Rogue
+      </button>
+      <div class="inbound-sheet" id="inbound-sheet" hidden>
+        <div class="inbound-sheet-head">
+          <p class="inbound-kicker">inbound // signal</p>
+          <button type="button" class="inbound-close" id="inbound-close" aria-label="Close">
+            esc
+          </button>
+        </div>
+        <form class="inbound-form" id="inbound-form" novalidate>
+          <label class="inbound-field">
+            <span>name</span>
+            <input
+              id="inbound-name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              maxlength="120"
+              required
+              placeholder="Your name"
+            />
+          </label>
+          <label class="inbound-field">
+            <span>email</span>
+            <input
+              id="inbound-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              maxlength="254"
+              required
+              placeholder="you@company.com"
+            />
+          </label>
+          <!-- honeypot -->
           <input
-            id="inbound-name"
-            name="name"
+            class="inbound-hp"
             type="text"
-            autocomplete="name"
-            maxlength="120"
-            required
-            placeholder="Your name"
+            name="company"
+            tabindex="-1"
+            autocomplete="off"
+            aria-hidden="true"
           />
-        </label>
-        <label class="inbound-field">
-          <span>email</span>
-          <input
-            id="inbound-email"
-            name="email"
-            type="email"
-            autocomplete="email"
-            maxlength="254"
-            required
-            placeholder="you@company.com"
-          />
-        </label>
-        <!-- honeypot -->
-        <input
-          class="inbound-hp"
-          type="text"
-          name="company"
-          tabindex="-1"
-          autocomplete="off"
-          aria-hidden="true"
-        />
-        <button class="inbound-submit" type="submit" id="inbound-submit">
-          Work with Rogue
-        </button>
-        <p class="inbound-status" id="inbound-status" role="status" aria-live="polite"></p>
-      </form>
+          <button class="inbound-submit" type="submit" id="inbound-submit">
+            Work with Rogue
+          </button>
+          <p class="inbound-status" id="inbound-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
 
     <footer class="chrome chrome-bottom">

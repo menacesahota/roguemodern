@@ -952,15 +952,57 @@ muteBtn.addEventListener("click", () => {
   if (!audio.muted) play("click");
 });
 
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") closePanel();
-});
-
+const inbound = document.getElementById("inbound");
 const inboundForm = document.getElementById("inbound-form");
 const inboundStatus = document.getElementById("inbound-status");
 const inboundSubmit = document.getElementById("inbound-submit");
+const inboundToggle = document.getElementById("inbound-toggle");
+const inboundClose = document.getElementById("inbound-close");
+const inboundSheet = document.getElementById("inbound-sheet");
+
+function openInbound() {
+  if (!inbound) return;
+  inbound.classList.add("is-open");
+  if (inboundToggle) inboundToggle.setAttribute("aria-expanded", "true");
+  if (inboundSheet) inboundSheet.hidden = false;
+  const nameInput = document.getElementById("inbound-name");
+  if (nameInput && window.matchMedia("(max-width: 720px)").matches) {
+    nameInput.focus({ preventScroll: true });
+  }
+}
+
+function closeInbound() {
+  if (!inbound) return;
+  inbound.classList.remove("is-open");
+  if (inboundToggle) inboundToggle.setAttribute("aria-expanded", "false");
+  if (inboundSheet) {
+    // Keep sheet in DOM for desktop; only hide attribute for a11y on mobile collapse
+    if (window.matchMedia("(max-width: 720px)").matches) {
+      inboundSheet.hidden = true;
+    }
+  }
+}
+
+if (inboundToggle) {
+  inboundToggle.addEventListener("click", () => {
+    ensureAudio();
+    play("click");
+    openInbound();
+  });
+}
+
+if (inboundClose) {
+  inboundClose.addEventListener("click", () => {
+    closeInbound();
+  });
+}
 
 if (inboundForm) {
+  // Desktop: sheet always visible
+  if (inboundSheet && !window.matchMedia("(max-width: 720px)").matches) {
+    inboundSheet.hidden = false;
+  }
+
   if (!isContactConfigured()) {
     inboundStatus.textContent = "signal offline";
     inboundStatus.classList.add("is-err");
@@ -994,6 +1036,9 @@ if (inboundForm) {
       inboundStatus.textContent = "signal received";
       inboundStatus.classList.add("is-ok");
       showToast("inbound locked - we'll reply by email");
+      if (window.matchMedia("(max-width: 720px)").matches) {
+        setTimeout(closeInbound, 900);
+      }
     } catch (err) {
       inboundStatus.textContent = err?.message || "signal failed";
       inboundStatus.classList.add("is-err");
@@ -1002,6 +1047,13 @@ if (inboundForm) {
     }
   });
 }
+
+window.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closePanel();
+    closeInbound();
+  }
+});
 
 resize();
 tickClock();
