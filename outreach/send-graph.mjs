@@ -90,7 +90,7 @@ function textToHtmlBody(text) {
       let lines = escapeHtml(block).replaceAll("\n", "<br />\n");
       // Bold the call-to-action YES (word boundary, case-sensitive as written)
       lines = lines.replace(/\bYES\b/g, "<strong>YES</strong>");
-      return `<p style="margin:0 0 14px 0;font-family:'Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#111111;">${lines}</p>`;
+      return `<p style="margin:0 0 14px 0;font-family:'Space Grotesk','Segoe UI',Arial,Helvetica,sans-serif;font-size:15px;line-height:1.55;color:#111111;font-weight:400;">${lines}</p>`;
     })
     .join("\n");
   return parts;
@@ -102,8 +102,18 @@ function buildHtml(item) {
     : textToHtmlBody(stripTrailingPlainSignature(item.bodyText));
   return `<!DOCTYPE html>
 <html>
-<head><meta charset="utf-8" /></head>
-<body style="margin:0;padding:0;background:#ffffff;">
+<head>
+  <meta charset="utf-8" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!--[if !mso]><!-->
+  <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+  </style>
+  <!--<![endif]-->
+</head>
+<body style="margin:0;padding:0;background:#ffffff;font-family:'Space Grotesk','Segoe UI',Arial,Helvetica,sans-serif;color:#111111;">
   <div style="max-width:560px;padding:8px 4px 24px 4px;">
     ${body}
     <div style="height:22px;line-height:22px;font-size:1px;">&nbsp;</div>
