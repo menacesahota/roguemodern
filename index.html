@@ -92,6 +92,49 @@
 
     <div class="toast" id="toast" hidden></div>
 
+    <section class="inbound" id="inbound" aria-label="Work with Rogue">
+      <p class="inbound-kicker">inbound // signal</p>
+      <form class="inbound-form" id="inbound-form" novalidate>
+        <label class="inbound-field">
+          <span>name</span>
+          <input
+            id="inbound-name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            maxlength="120"
+            required
+            placeholder="Your name"
+          />
+        </label>
+        <label class="inbound-field">
+          <span>email</span>
+          <input
+            id="inbound-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            maxlength="254"
+            required
+            placeholder="you@company.com"
+          />
+        </label>
+        <!-- honeypot -->
+        <input
+          class="inbound-hp"
+          type="text"
+          name="company"
+          tabindex="-1"
+          autocomplete="off"
+          aria-hidden="true"
+        />
+        <button class="inbound-submit" type="submit" id="inbound-submit">
+          Work with Rogue
+        </button>
+        <p class="inbound-status" id="inbound-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
     <footer class="chrome chrome-bottom">
       <p>drag · click · esc</p>
       <div class="chrome-actions">

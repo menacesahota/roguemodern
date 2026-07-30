@@ -573,6 +573,143 @@ body.is-ready .panel {
   transform: translate(-50%, 0);
 }
 
+.inbound {
+  position: fixed;
+  z-index: 12;
+  right: 1.25rem;
+  bottom: 2.5rem;
+  width: min(280px, calc(100vw - 2.5rem));
+  padding: 1rem 1.05rem 1.05rem;
+  border: 1px solid rgba(17, 17, 17, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 12px 40px rgba(17, 17, 17, 0.05);
+  opacity: 0;
+  transform: translateY(8px);
+  transition:
+    opacity 0.45s var(--ease),
+    transform 0.45s var(--ease),
+    border-color 0.35s var(--ease);
+  pointer-events: none;
+}
+
+body.is-ready .inbound {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.inbound-kicker {
+  margin: 0 0 0.75rem;
+  color: rgba(17, 17, 17, 0.4);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.inbound-form {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.inbound-field {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.inbound-field span {
+  color: rgba(17, 17, 17, 0.35);
+  font-size: 0.56rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.inbound-field input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.16);
+  border-radius: 0;
+  background: transparent;
+  color: #111;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.4;
+  padding: 0.35rem 0 0.45rem;
+  outline: none;
+  transition: border-color 0.25s var(--ease);
+}
+
+.inbound-field input::placeholder {
+  color: rgba(17, 17, 17, 0.28);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.inbound-field input:focus {
+  border-bottom-color: rgba(17, 17, 17, 0.55);
+}
+
+.inbound-hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.inbound-submit {
+  margin-top: 0.25rem;
+  width: 100%;
+  border: 1px solid rgba(17, 17, 17, 0.85);
+  background: #111;
+  color: #f7f7f5;
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.7rem 0.85rem;
+  cursor: pointer;
+  transition:
+    background 0.25s var(--ease),
+    color 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    opacity 0.25s var(--ease);
+}
+
+.inbound-submit:hover:not(:disabled) {
+  background: transparent;
+  color: #111;
+}
+
+.inbound-submit:disabled {
+  opacity: 0.45;
+  cursor: wait;
+}
+
+.inbound-status {
+  margin: 0.15rem 0 0;
+  min-height: 1em;
+  color: rgba(17, 17, 17, 0.45);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.inbound-status.is-ok {
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.inbound-status.is-err {
+  color: rgba(140, 40, 40, 0.85);
+  text-transform: none;
+  letter-spacing: 0.02em;
+}
+
 @keyframes core-tick {
   0%,
   100% {
@@ -619,6 +756,23 @@ body.is-ready .panel {
 
   .panel.is-open {
     transform: translate(-50%, 0);
+  }
+
+  .inbound {
+    left: 50%;
+    right: auto;
+    bottom: 3.2rem;
+    transform: translate(-50%, 8px);
+    width: min(360px, calc(100vw - 1.25rem));
+  }
+
+  body.is-ready .inbound {
+    transform: translate(-50%, 0);
+  }
+
+  body:has(.panel.is-open) .inbound {
+    opacity: 0;
+    pointer-events: none;
   }
 
   .node {

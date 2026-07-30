@@ -7,4 +7,6 @@ dist
 .vercel
 *.log
 outreach/.m365-secrets.local
+outreach/.supabase-db.local
 outreach/logs/
+supabase/.temp/

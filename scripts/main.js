@@ -1,3 +1,5 @@
+import { isContactConfigured, submitLead } from "./contact.js";
+
 const canvas = document.getElementById("web");
 const ctx = canvas.getContext("2d");
 const nodesRoot = document.getElementById("nodes");
@@ -930,7 +932,14 @@ window.addEventListener("pointerleave", () => {
 
 document.addEventListener("click", (e) => {
   ensureAudio();
-  if (e.target.closest(".node") || e.target.closest(".panel") || e.target.closest(".mute")) return;
+  if (
+    e.target.closest(".node") ||
+    e.target.closest(".panel") ||
+    e.target.closest(".inbound") ||
+    e.target.closest(".mute")
+  ) {
+    return;
+  }
   if (state.selected >= 0) closePanel();
 });
 
@@ -946,6 +955,53 @@ muteBtn.addEventListener("click", () => {
 window.addEventListener("keydown", (e) => {
   if (e.key === "Escape") closePanel();
 });
+
+const inboundForm = document.getElementById("inbound-form");
+const inboundStatus = document.getElementById("inbound-status");
+const inboundSubmit = document.getElementById("inbound-submit");
+
+if (inboundForm) {
+  if (!isContactConfigured()) {
+    inboundStatus.textContent = "signal offline";
+    inboundStatus.classList.add("is-err");
+    inboundSubmit.disabled = true;
+  }
+
+  inboundForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    ensureAudio();
+
+    const honeypot = inboundForm.elements.namedItem("company");
+    if (honeypot && String(honeypot.value || "").trim()) {
+      inboundStatus.textContent = "signal locked";
+      inboundStatus.classList.remove("is-err");
+      inboundStatus.classList.add("is-ok");
+      inboundForm.reset();
+      return;
+    }
+
+    const name = document.getElementById("inbound-name").value;
+    const email = document.getElementById("inbound-email").value;
+
+    inboundSubmit.disabled = true;
+    inboundStatus.textContent = "sending…";
+    inboundStatus.classList.remove("is-ok", "is-err");
+
+    try {
+      await submitLead({ name, email });
+      play("click");
+      inboundForm.reset();
+      inboundStatus.textContent = "signal received";
+      inboundStatus.classList.add("is-ok");
+      showToast("inbound locked - we'll reply by email");
+    } catch (err) {
+      inboundStatus.textContent = err?.message || "signal failed";
+      inboundStatus.classList.add("is-err");
+    } finally {
+      inboundSubmit.disabled = !isContactConfigured();
+    }
+  });
+}
 
 resize();
 tickClock();
