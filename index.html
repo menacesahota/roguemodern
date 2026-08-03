@@ -8,6 +8,16 @@
       name="description"
       content="Rogue helps UK businesses grow and become more efficient with modern websites, automation, and AI. Operators, not consultants."
     />
+    <meta name="theme-color" content="#0c0e0c" />
+    <meta property="og:title" content="Rogue — Grow faster. Run leaner." />
+    <meta
+      property="og:description"
+      content="Websites, automation, and AI that bring in more work - and take less time to run."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://roguemodern.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://roguemodern.com/" />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,146 +28,180 @@
     <link rel="stylesheet" href="/styles/main.css" />
   </head>
   <body>
+    <a class="skip" href="#main">Skip to content</a>
     <div class="grain" aria-hidden="true"></div>
 
-    <header class="nav">
+    <header class="nav" id="nav">
       <a class="nav-brand" href="#top" aria-label="Rogue home">Rogue</a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#systems">Systems</a>
         <a href="#method">Method</a>
+        <a href="#start">Start</a>
         <a href="#connect">Connect</a>
       </nav>
-      <a class="nav-cta" href="#start">Work with Rogue</a>
+      <div class="nav-end">
+        <button class="nav-menu" id="nav-menu" type="button" aria-expanded="false" aria-controls="nav-drawer">
+          Menu
+        </button>
+        <a class="nav-cta" href="#start">Work with Rogue</a>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-label="Intro">
-        <div class="hero-veil" aria-hidden="true"></div>
+    <div class="nav-drawer" id="nav-drawer" hidden>
+      <a href="#systems">Systems</a>
+      <a href="#method">Method</a>
+      <a href="#start">Start</a>
+      <a href="#connect">Connect</a>
+      <a class="nav-drawer-cta" href="#start">Work with Rogue</a>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top" aria-label="Intro">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <span class="hero-glow hero-glow-a"></span>
+          <span class="hero-glow hero-glow-b"></span>
+          <span class="hero-grid"></span>
+        </div>
+
         <div class="hero-layout">
           <div class="hero-copy">
             <p class="brand-mark">Rogue</p>
-            <h1 class="hero-title">Grow the business. Cut the friction.</h1>
+            <h1 class="hero-title">Grow the business.<br />Cut the friction.</h1>
             <p class="hero-lede">
-              Websites, automation, and AI that bring in more work - and take less time to run.
+              Modern websites, automation, and AI for firms that already deliver - so you win more work and waste less time.
             </p>
             <div class="hero-actions">
               <a class="btn btn-solid" href="#start">Work with Rogue</a>
-              <a class="btn btn-ghost" href="#systems">See how</a>
+              <a class="btn btn-ghost" href="#systems">See the systems</a>
             </div>
+            <p class="hero-note">Email-first. No pitch deck theatre.</p>
           </div>
-          <div class="hero-brain" aria-hidden="true">
-            <canvas class="brain-canvas" id="brain-canvas"></canvas>
-          </div>
+
+          <figure class="hero-brain">
+            <canvas class="brain-canvas" id="brain-canvas" role="img" aria-label="Animated neural network shaped like a brain"></canvas>
+            <figcaption class="brain-caption">Systems that think with the business</figcaption>
+          </figure>
         </div>
       </section>
 
       <section class="stance" aria-label="Positioning">
-        <p class="stance-text">
-          We help solid businesses <em>grow</em> and run <em>leaner</em> - modern systems for firms still stuck on dated sites and manual ops.
-        </p>
-        <ul class="stance-points">
-          <li>
-            <strong>More demand</strong>
-            <span>Sites and outreach that turn quiet weeks into booked work.</span>
-          </li>
-          <li>
-            <strong>Less admin</strong>
-            <span>Automation that catches leads, follows up, and keeps the pipeline moving.</span>
-          </li>
-          <li>
-            <strong>Faster decisions</strong>
-            <span>AI that drafts, triages, and surfaces what needs a human.</span>
-          </li>
-        </ul>
+        <div class="stance-inner">
+          <p class="stance-text">
+            We embed as <em>operators</em>, not consultants - building the growth layer and the efficiency layer so both compound.
+          </p>
+          <ul class="stance-points">
+            <li>
+              <strong>More demand</strong>
+              <span>Sites and outreach that turn quiet weeks into booked work.</span>
+            </li>
+            <li>
+              <strong>Less admin</strong>
+              <span>Capture, routing, and follow-up that keep the pipeline moving.</span>
+            </li>
+            <li>
+              <strong>Faster decisions</strong>
+              <span>AI that drafts, triages, and surfaces what needs a human.</span>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="systems" id="systems" aria-label="Systems">
-        <div class="section-head">
-          <p class="eyebrow">Systems</p>
-          <h2>Three layers. One outcome: growth with less drag.</h2>
-          <p class="section-lede">
-            Use the full stack, or start with the bottleneck costing you revenue or hours.
-          </p>
-        </div>
+        <div class="section-shell">
+          <div class="section-head">
+            <p class="eyebrow">Systems</p>
+            <h2>Three layers. One outcome: growth with less drag.</h2>
+            <p class="section-lede">
+              Start with the bottleneck costing you revenue or hours - or deploy the full stack.
+            </p>
+          </div>
 
-        <div class="system-list">
-          <article class="system">
-            <p class="system-id">01</p>
-            <h3>Sites that sell</h3>
-            <p>
-              Clear paths to a quote so browsers become customers - not a dated brochure that leaks enquiries.
-            </p>
-            <p class="system-meta">Growth · conversion · trust</p>
-          </article>
-          <article class="system">
-            <p class="system-id">02</p>
-            <h3>Automation that saves hours</h3>
-            <p>
-              Lead capture, follow-ups, and ops glue so nothing dies in an info@ inbox or a spreadsheet.
-            </p>
-            <p class="system-meta">Efficiency · inbox · workflows</p>
-          </article>
-          <article class="system">
-            <p class="system-id">03</p>
-            <h3>AI that multiplies output</h3>
-            <p>
-              Agents for outreach, triage, and content - so your team spends time on work that pays.
-            </p>
-            <p class="system-meta">Scale · speed · ops</p>
-          </article>
+          <div class="system-list">
+            <article class="system">
+              <p class="system-id">01 / Sites</p>
+              <h3>A front door that sells</h3>
+              <p>
+                Clear paths to a quote so browsers become customers - not a dated brochure leaking enquiries.
+              </p>
+              <p class="system-meta">Conversion · trust · mobile</p>
+            </article>
+            <article class="system">
+              <p class="system-id">02 / Automation</p>
+              <h3>Ops that don't stall</h3>
+              <p>
+                Lead capture, follow-ups, and workflow glue so nothing dies in an info@ inbox or a spreadsheet.
+              </p>
+              <p class="system-meta">Inbox · CRM · reminders</p>
+            </article>
+            <article class="system">
+              <p class="system-id">03 / AI</p>
+              <h3>Output without the grind</h3>
+              <p>
+                Agents for outreach, triage, and content - so your team spends time on work that pays.
+              </p>
+              <p class="system-meta">Agents · drafts · triage</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="method" id="method" aria-label="Method">
-        <div class="section-head">
-          <p class="eyebrow">Method</p>
-          <h2>From dated friction to a growth system.</h2>
-          <p class="section-lede">Tight loop. No six-week discovery theatre.</p>
-        </div>
+        <div class="section-shell">
+          <div class="section-head">
+            <p class="eyebrow">Method</p>
+            <h2>From dated friction to a growth system.</h2>
+            <p class="section-lede">A tight loop. Ship fast. Stay in the work.</p>
+          </div>
 
-        <ol class="steps">
-          <li>
-            <span class="step-n">01</span>
-            <div>
-              <h3>Find the drag</h3>
-              <p>We open the live site and ops path - then name what's blocking growth or wasting time.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-n">02</span>
-            <div>
-              <h3>Teardown</h3>
-              <p>Reply YES for a 3-point teardown: what's dated, what's costing you, and the first efficiency win. No call required.</p>
-            </div>
-          </li>
-          <li>
-            <span class="step-n">03</span>
-            <div>
-              <h3>Build &amp; run</h3>
-              <p>We ship the site and systems, then stay as operators so growth and efficiency compound.</p>
-            </div>
-          </li>
-        </ol>
+          <ol class="steps">
+            <li>
+              <span class="step-n">01</span>
+              <div>
+                <h3>Find the drag</h3>
+                <p>We open the live site and ops path - then name what's blocking growth or wasting hours.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n">02</span>
+              <div>
+                <h3>Teardown</h3>
+                <p>Reply YES for a 3-point teardown: what's dated, what's costing you, and the first win. No call required.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-n">03</span>
+              <div>
+                <h3>Build &amp; run</h3>
+                <p>We ship the site and systems, then stay as operators so growth and efficiency keep compounding.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
       </section>
 
       <section class="proof" aria-label="Outcomes">
-        <div class="section-head">
-          <p class="eyebrow">Built for</p>
-          <h2>Printers, joiners, fabricators, contractors - firms that already deliver, ready to grow.</h2>
-        </div>
-        <div class="proof-grid">
-          <div>
-            <p class="proof-num">More</p>
-            <p class="proof-label">enquiries that actually convert</p>
+        <div class="section-shell">
+          <div class="section-head">
+            <p class="eyebrow">Built for</p>
+            <h2>Trade firms that already deliver - and are ready to grow without more chaos.</h2>
           </div>
-          <div>
-            <p class="proof-num">Less</p>
-            <p class="proof-label">manual chase and inbox chaos</p>
+          <div class="proof-grid">
+            <div class="proof-item">
+              <p class="proof-num">More</p>
+              <p class="proof-label">enquiries that convert into booked work</p>
+            </div>
+            <div class="proof-item">
+              <p class="proof-num">Less</p>
+              <p class="proof-label">manual chase, inbox noise, and stalled leads</p>
+            </div>
+            <div class="proof-item">
+              <p class="proof-num">Faster</p>
+              <p class="proof-label">path from interest to a confirmed job</p>
+            </div>
           </div>
-          <div>
-            <p class="proof-num">Faster</p>
-            <p class="proof-label">path from interest to booked work</p>
-          </div>
+          <p class="proof-trades">
+            Packaging · print · joinery · fabrication · HVAC · electrical · and similar local operators
+          </p>
         </div>
       </section>
 
@@ -165,10 +209,15 @@
         <div class="start-inner">
           <div class="start-copy">
             <p class="eyebrow">Start</p>
-            <h2>Ready to grow - without more chaos?</h2>
+            <h2>Tell us what you're running. We'll show where growth and time leak.</h2>
             <p class="section-lede">
-              Name and email. We'll reply with a clear next step - usually a short teardown on where you're leaking growth or time.
+              Name and email. You'll get a confirmation, then a clear next step - usually a short teardown, not a sales call.
             </p>
+            <ul class="start-bullets">
+              <li>Concrete dated clue from your live site</li>
+              <li>What's costing you demand or hours</li>
+              <li>The first fix worth shipping</li>
+            </ul>
           </div>
 
           <form class="start-form" id="inbound-form" novalidate>
@@ -185,7 +234,7 @@
               />
             </label>
             <label class="field">
-              <span>Email</span>
+              <span>Work email</span>
               <input
                 id="inbound-email"
                 name="email"
@@ -213,52 +262,55 @@
       </section>
 
       <section class="faq" aria-label="FAQ">
-        <div class="section-head">
-          <p class="eyebrow">FAQ</p>
-          <h2>Common questions</h2>
-        </div>
+        <div class="section-shell">
+          <div class="section-head">
+            <p class="eyebrow">FAQ</p>
+            <h2>Straight answers</h2>
+          </div>
 
-        <div class="faq-list">
-          <details>
-            <summary>How do you help a business grow?</summary>
-            <p>
-              We fix the front door and the follow-up. A site that converts, plus automation and AI so leads don't stall - more booked work from the demand you already have, and systems that scale when you push for more.
-            </p>
-          </details>
-          <details>
-            <summary>How do you make us more efficient?</summary>
-            <p>
-              We remove manual chase: capture, routing, reminders, and draft replies. Your team spends less time in the inbox and more time delivering.
-            </p>
-          </details>
-          <details>
-            <summary>Who do you work with?</summary>
-            <p>
-              Trade and local firms with real demand - packaging, print, joinery, fabrication, HVAC, electrical, and similar. If growth is stuck behind a dated site or messy ops, we're interested.
-            </p>
-          </details>
-          <details>
-            <summary>What happens after I submit?</summary>
-            <p>
-              You get an email confirmation. We review and reply with a next step - often a short teardown of what's costing you growth or hours.
-            </p>
-          </details>
+          <div class="faq-list">
+            <details>
+              <summary>How do you help a business grow?</summary>
+              <p>
+                We fix the front door and the follow-up. A site that converts, plus automation and AI so leads don't stall - more booked work from demand you already have, and systems that scale when you push for more.
+              </p>
+            </details>
+            <details>
+              <summary>How do you make us more efficient?</summary>
+              <p>
+                We remove manual chase: capture, routing, reminders, and draft replies. Your team spends less time in the inbox and more time delivering.
+              </p>
+            </details>
+            <details>
+              <summary>Who is this for?</summary>
+              <p>
+                Trade and local firms with real demand - packaging, print, joinery, fabrication, HVAC, electrical, and similar. If growth is stuck behind a dated site or messy ops, we're interested.
+              </p>
+            </details>
+            <details>
+              <summary>Do I need a call first?</summary>
+              <p>
+                No. The teardown path is email-first. Calls happen when there's something worth building - or when you book one below.
+              </p>
+            </details>
+          </div>
         </div>
       </section>
+
       <section class="connect" id="connect" aria-label="Subscribe or book a call">
         <div class="connect-inner">
           <div class="connect-copy">
-            <p class="eyebrow">Next step</p>
+            <p class="eyebrow">Connect</p>
             <h2>Subscribe for updates - or book a call.</h2>
             <p class="section-lede">
-              Stay in the loop on growth systems, or jump straight to a conversation.
+              Stay close to the work, or jump straight into a 15-minute conversation.
             </p>
           </div>
 
           <div class="connect-panels">
             <form class="connect-panel" id="subscribe-form" novalidate>
               <p class="connect-label">Subscribe</p>
-              <p class="connect-hint">Occasional notes on growth and efficiency. No spam.</p>
+              <p class="connect-hint">Occasional notes on growth systems and efficiency. No spam.</p>
               <label class="field">
                 <span>Email</span>
                 <input
@@ -286,16 +338,16 @@
             <div class="connect-panel connect-panel-call">
               <p class="connect-label">Book a call</p>
               <p class="connect-hint">
-                15 minutes. We'll look at where you're leaking growth or time.
+                Fifteen minutes on where you're leaking growth or time - then a clear next step.
               </p>
               <a
                 class="btn btn-solid"
-                href="mailto:01@roguemodern.com?subject=Book%20a%20call%20with%20Rogue&body=Hi%20Mani%2C%0A%0AI'd%20like%20to%20book%20a%20short%20call%20about%20growing%20%2F%20tightening%20ops.%0A%0AName%3A%0ABusiness%3A%0A"
+                href="mailto:01@roguemodern.com?subject=Book%20a%20call%20with%20Rogue&body=Hi%20Mani%2C%0A%0AI'd%20like%20to%20book%20a%20short%20call%20about%20growing%20%2F%20tightening%20ops.%0A%0AName%3A%0ABusiness%3A%0AWebsite%3A%0A"
               >
-                Book a call
+                Email to book a call
               </a>
               <p class="connect-alt">
-                Or email <a href="mailto:01@roguemodern.com">01@roguemodern.com</a>
+                Direct: <a href="mailto:01@roguemodern.com">01@roguemodern.com</a>
               </p>
             </div>
           </div>
@@ -304,9 +356,20 @@
     </main>
 
     <footer class="footer">
-      <p class="footer-brand">Rogue</p>
-      <p class="footer-meta">Growth · efficiency · systems · <a href="mailto:01@roguemodern.com">01@roguemodern.com</a></p>
-      <p class="footer-copy">© <span id="year"></span> Rogue Modern</p>
+      <div class="footer-inner">
+        <div class="footer-brand-block">
+          <p class="footer-brand">Rogue</p>
+          <p class="footer-tag">Growth systems for businesses that already work.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#systems">Systems</a>
+          <a href="#method">Method</a>
+          <a href="#start">Start</a>
+          <a href="#connect">Connect</a>
+          <a href="mailto:01@roguemodern.com">01@roguemodern.com</a>
+        </div>
+        <p class="footer-copy">© <span id="year"></span> Rogue Modern</p>
+      </div>
     </footer>
 
     <script src="/scripts/main.js" type="module"></script>

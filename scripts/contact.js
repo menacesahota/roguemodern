@@ -5,7 +5,7 @@ export function isContactConfigured() {
   return Boolean(supabaseUrl && supabaseAnonKey);
 }
 
-export async function submitLead({ name, email }) {
+export async function submitLead({ name, email, source = "website" }) {
   if (!isContactConfigured()) {
     throw new Error("Signal offline - Supabase is not configured.");
   }
@@ -31,7 +31,7 @@ export async function submitLead({ name, email }) {
     body: JSON.stringify({
       name: cleanName,
       email: cleanEmail,
-      source: "website",
+      source,
       user_agent: navigator.userAgent?.slice(0, 280) || null,
     }),
   });
