@@ -1,25 +1,44 @@
 business,website,city,dated_clue,contact_name,email,status,sent_date,reply,package,notes
-LK Print Limited,https://lkprint.co.uk/,London N7,"Homepage repeats the same welcome block 3x; generic service grid; enquiry still via info@ + WeTransfer for files",,info@lkprint.co.uk,researched,,,,Family print near Kings Cross — strong ops candidate
-Print Room Soho,https://printroomsoho.com/,London W1,"Wix-style single page; giant >> Request a Quote <<; almost no structure for a 24hr West End printer",,info@printroomsoho.com,researched,,,,Urgent print niche — site under-sells the offer
-Kopykat Printing,https://www.kopykat.co.uk/,London EC2,"Long text-heavy homepage; dated layout for a 35yr City printer; quote is a buried form link",,print@kopykat.co.uk,researched,,,,Shoreditch — same-day print; automation + site refresh fit
-W MacCarthy & Sons,https://maccarthyandsons.com/,London SE18,"Solid brand but product sections duplicate; contact form is heavy; no sharp mobile CTA for quotes",,,researched,,,,Packaging since 1880 Woolwich — check contact email on form/page
-London Box Printer,https://londonboxprinter.uk/,London,"Broken English (We Insure Best / Dedictated); Lorem-style fluff; looks template-spammy vs real craft",,,researched,,,,Verify legitimacy before emailing — may be low-quality lead-gen site
-CAG Electrical Contractors,https://cagelectrical.org.uk/,Surbiton / London,"CompanyWebsite.co.uk template; broken image placeholders; thin homepage for 35yr commercial electrician",,,researched,,,,Big commercial jobs — site doesn't match Crown Estate / Dorchester case studies
-Elite Electrical Contracting,https://www.eliteelectrical.co.uk/,London,"Sparse homepage; almost no navigation depth; £15m fit-out firm with brochure-thin web presence",,,researched,,,,High-value — find director emails via Companies House / LinkedIn
-London Electrical.Com Ltd,https://www.londonelectrical.com/,Dartford / G.London,"Wix/Editor feel; long walls of text; CTA is generic Call now with little conversion path",,,researched,,,,Family since 1993 — NICEIC commercial
-MJ Kloss Carpentry,https://mjklosscarpentry.co.uk/,London SE15,"Offer banners + form clutter; typos (a our joinery); SEO-heavy copy over clarity",,contact@mjklosscarpentry.co.uk,researched,,,,Est 1979 — strong local joiner
-R&G Metal Products,https://www.randgmetal.co.uk/,Twickenham / SW London,"Placeholder Lorem ipsum still on How we work; thin pages for est.1982 fabricator",,,researched,,,,Easy win — unfinished content is the dated clue
-KP Engineering,https://www.kpengineering.co.uk/,Wembley / London,"Long marketing pages; traditional fabricator site that underplays workshop/process",,,researched,,,,Gates/railings since 1990 — check contact page
-The Colourbox Printing,https://www.thecolourboxprinting.com/,London N1,"Agency-style but dense; Wenlock Road virtual-office vibe — verify before deep outreach",,sales@thecolourboxprinting.com,researched,,,,POS/packaging — may already feel modern; lower priority
-Sky Electrical,https://www.skyelectrical.co.uk/,Twickenham / London,"Polished enough — skip or nurture later; use as 'too modern' benchmark",,info@skyelectrical.co.uk,skip,,,,Not a first-wave target
-IPW1 / Colourdome,https://www.ipw1.co.uk/,London SE1,"Busy promotional homepage; specialist printer — site OK but ops/automation angle possible",,hello@ipw1.co.uk,nurture,,,,Tower Bridge — secondary list
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
-,,,,,,,,,,,
+R&G Metal Products,https://www.randgmetal.co.uk/,Twickenham / SW London,"Placeholder Lorem ipsum still on How we work; thin pages for est.1982 fabricator",,randgmetalproducts@btconnect.com,sent,2026-07-30,,,Wave 1
+LK Print Limited,https://lkprint.co.uk/,London N7,"Homepage repeats the same welcome block 3x; enquiry via info@ + WeTransfer",,info@lkprint.co.uk,sent,2026-07-30,,,Wave 1
+Print Room Soho,https://printroomsoho.com/,London W1,"Thin Wix-style single page; giant Request a Quote for a 24hr West End printer",,info@printroomsoho.com,sent,2026-07-30,,,Wave 1
+Kopykat Printing,https://www.kopykat.co.uk/,London EC2,"Long text-heavy homepage; quote link buried for 35yr City printer",,print@kopykat.co.uk,sent,2026-07-30,,,Wave 1
+MJ Kloss Carpentry,https://mjklosscarpentry.co.uk/,London SE15,"Offer banners + form clutter on est.1979 joiner site",,contact@mjklosscarpentry.co.uk,sent,2026-07-30,,,Wave 1
+CAG Electrical Contractors,https://cagelectrical.org.uk/,Surbiton / London,"CompanyWebsite.co.uk template; broken image placeholders vs Crown Estate / Dorchester work",,info@cagelectrical.co.uk,sent,2026-07-30,,,Wave 1
+London Electrical.Com Ltd,https://www.londonelectrical.com/,Dartford / G.London,"Long walls of text; weak Call now CTA for NICEIC family firm since 1993",,info@londonelectrical.com,sent,2026-07-30,,,Wave 1
+W MacCarthy & Sons,https://maccarthyandsons.com/,London SE18,"Heavy multi-field quote form; no sharp mobile CTA for packaging since 1880",,boxes@maccarthyandsons.com,sent,2026-07-30,,,Wave 1
+KP Engineering,https://www.kpengineering.co.uk/,Wembley / London,"Long marketing pages underplay workshop/process for fabricator since 1990",,info@kpengineering.co.uk,sent,2026-07-30,,,Wave 1
+Elite Electrical Contracting,https://www.eliteelectrical.co.uk/,Sutton / London,"Sparse homepage; brochure-thin for £15m commercial fit-out firm",,info@eliteelectrical.co.uk,sent,2026-07-30,,,Wave 1
+IPW1 / Colourdome,https://www.ipw1.co.uk/,London SE1,"Photo By: John Doe placeholders still on About/Team blocks",,hello@ipw1.co.uk,draft,2026-07-31,,,Wave 2 draft - review before send
+The Colourbox Printing,https://www.thecolourboxprinting.com/,London N1,"Dense homepage; hard to scan for first-time buyer",,sales@thecolourboxprinting.com,draft,2026-07-31,,,Wave 2 draft
+Tara Fabrications,https://tarafabrications.co.uk/,London SE15,"Repeated GET A QUOTE blocks; SEO-heavy copy for 30yr Peckham fabricator",,info@tarafabrications.co.uk,draft,2026-07-31,,,Wave 2 draft
+Multilines Commercial,https://multilinescommercial.co.uk/,Wembley / London,"Brochure-style site; soft conversion for 40yr Wembley joinery factory",,info@multilinescommercial.co.uk,draft,2026-07-31,,,Wave 2 draft
+D2R Print Solutions,https://d2rcrossmedia.com/,Watford,"Insanely great hype + free productivity pack crowding the print offer",,response@d2rCrossMedia.com,draft,2026-07-31,,,Wave 2 draft
+London Joinery Services,https://londonjoineryservices.co.uk/,London NW4,"Raw CSS fragments in page chrome; hard-sell price-guarantee layout",,info@londonjoineryservices.co.uk,draft,2026-07-31,,,Wave 2 draft
+Falkus Joinery,https://falkusjoinery.co.uk/,London EC2,"Legacy myzen.co.uk site still live alongside main presence",,info@falkusjoinery.co.uk,draft,2026-07-31,,,Wave 2 draft
+Printingprogress,https://printingprogress.co.uk/,Bromley / UK,"Callback popup + closed-shop notice + noisy web path",,info@printingprogress.co.uk,draft,2026-07-31,,,Wave 2 draft
+R Perkins & Sons,https://rperkins.co.uk/,London EC1,"Typos in SEO copy (specialist s / HV AC) for Smithfield HVAC firm",,info@rperkins.co.uk,draft,2026-07-31,,,Wave 2 draft
+Yellow Print,https://yellowprint.co.uk/,Battersea / London,"Dense service grid + heavy quote form before workshop story",,info@yellowprint.co.uk,draft,2026-07-31,,,Wave 2 draft
+Sky Electrical,https://www.skyelectrical.co.uk/,Twickenham / London,"Polished enough - skip",,info@skyelectrical.co.uk,skip,,,,Too modern benchmark
+London Box Printer,https://londonboxprinter.uk/,London,"Spammy/broken English - skip",,,skip,,,,Verify legitimacy first
+Essex Steel Fabrications,https://www.essexsteelfabrications.co.uk/,Rochford / Essex,"Old .asp pages; stock medical-team photos on fabricator homepage",,info@essexsteelfabrications.co.uk,draft,2026-08-03,,,Wave 3 draft
+Neill Wright and Associates,https://neillwright.co.uk/,Theydon Bois / Essex,"Typos self-sssessment / intial; fax still listed",,info@neillwright.co.uk,draft,2026-08-03,,,Wave 3 draft
+Consolidated Roofing,https://www.consolidatedroofing.co.uk/,Bromley / S London,"WE WILL BEAT ANY PRICE hard-sell SEO for family roofers",,enquiries@consolidatedroofing.co.uk,draft,2026-08-03,,,Wave 3 draft
+Chris Simms Carpentry,https://www.chrissimmscarpentry.co.uk/,St Albans / Herts,"Early-2010s template; repeating welcome lines",,info@chrissimmscarpentry.co.uk,draft,2026-08-03,,,Wave 3 draft
+Lazar Print,https://www.lazarprint.co.uk/,Watford,"Upload failed messaging on homepage quote path; product laundry list",,info@lazarprint.co.uk,draft,2026-08-03,,,Wave 3 draft
+Garden City Packaging,https://gardencitypackaging.co.uk/,Letchworth / Herts,"Duplicate hero; Mon: Thurs hours; plastic vs cardboard muddle",,info@gardencitypackaging.co.uk,draft,2026-08-03,,,Wave 3 draft
+Collins Packaging Supplies,http://www.collinspackaging.co.uk/,Brentwood / Essex,"Thin brochure site for family packaging since 1935",,orders@collinspackaging.co.uk,draft,2026-08-03,,,Wave 3 draft
+RGS Joinery,https://www.rgsjoinery.co.uk/,Kings Langley / Herts,"Thin Wix-style page vs Buckingham Palace / EuroDisney CV",,info@rgsjoinery.co.uk,draft,2026-08-03,,,Wave 3 draft
+Matrix Electrical Engineering,https://www.matrixelectricalengineering.co.uk/,Harlow / Essex,"2014 copyright; long accreditation walls bury CTA",,info@matrixelectricalengineering.co.uk,draft,2026-08-03,,,Wave 3 draft
+Threeway Precision,https://www.threewayprecision.co.uk/,Southend / Essex,"Bare welcome page + table contact for 35yr sheet metal firm",,info@threewayprecision.co.uk,draft,2026-08-03,,,Wave 3 draft
+Easton Sheet Metal,https://eastonsheetmetal.co.uk/,Harlow / Essex,"Est.1977 aerospace focus - site relatively current",,info@eastonsheetmetal.co.uk,researched,,,,Wave 3 backlog
+TFW Print & Packaging,https://tfwprinters.co.uk/,London SE18,"Polished luxury packaging site - skip",,sales@tfwprinters.co.uk,skip,,,,Too modern
+JKSM Sheetmetal,https://www.jksm.co.uk/,Whitstable / Kent,"Relatively current design site",,info@jksm.co.uk,researched,,,,Wave 3 backlog
+Southwood UK Roofing,https://www.roofercroydon.com/,Croydon,"Yell Business powered; copyright 2015",,,researched,,,,Email unclear - backlog
+VIR Electrical,https://virelectrical.co.uk/,Stevenage / Herts,"Incomplete homepage sentence; Telephone/Fax still listed",,,researched,,,,Wave 3 backlog
+OM Electrical,https://om-electrical.co.uk/,Stevenage / Herts,"Commercial electrical - review later",,info@om-electrical.co.uk,researched,,,,Wave 3 backlog
+EDP Packaging,https://www.edpgroup.co.uk/,Southend / Essex,"Removal/packaging stockist - review later",,sales@edpgroup.co.uk,researched,,,,Wave 3 backlog
+HB Accountants,https://hbaccountants.co.uk/,Hoddesdon / Herts,"Relatively current community site",,,skip,,,,Too modern
+Bespoke Batchelor,https://www.bespokebatchelor.co.uk/,Herts / Bucks,"Newer feel joinery site",,Andrew@bespokebatchelor.co.uk,researched,,,,Wave 3 backlog
+Romark Engineering,https://engineeringessex.co.uk/,Stanford-le-Hope / Essex,"SEO-heavy engineering pages",,jobs@romarkengineering.com,researched,,,,Wave 3 backlog
+Printing Watford,https://printingwatford.uk/,Watford,"Spammy SEO English - skip",,watford@printinggroup.uk,skip,,,,Legitimacy / quality
