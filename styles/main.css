@@ -501,12 +501,12 @@ em {
   letter-spacing: -0.02em;
 }
 
-.system {
-  min-height: 0;
-}
-
 .steps p {
+  margin: 0;
   max-width: none;
+  color: var(--muted-inv);
+  font-size: 0.86rem;
+  line-height: 1.55;
 }
 
 /* —— Proof —— */
