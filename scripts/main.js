@@ -19,6 +19,7 @@ function syncNav() {
 function closeDrawer() {
   if (!navDrawer || !navMenu) return;
   navDrawer.hidden = true;
+  navDrawer.classList.remove("is-open");
   navMenu.setAttribute("aria-expanded", "false");
   document.body.classList.remove("nav-open");
 }
@@ -26,9 +27,12 @@ function closeDrawer() {
 function openDrawer() {
   if (!navDrawer || !navMenu) return;
   navDrawer.hidden = false;
+  navDrawer.classList.add("is-open");
   navMenu.setAttribute("aria-expanded", "true");
   document.body.classList.add("nav-open");
 }
+
+closeDrawer();
 
 syncNav();
 window.addEventListener("scroll", syncNav, { passive: true });

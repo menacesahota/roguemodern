@@ -214,17 +214,25 @@ em {
 }
 
 .nav-drawer {
+  display: none;
   position: fixed;
   top: var(--nav-h);
   left: 0;
   right: 0;
   z-index: 49;
-  display: grid;
   gap: 0.15rem;
   padding: 0.75rem var(--pad) 1.25rem;
   background: rgba(11, 13, 11, 0.96);
   color: var(--text-inv);
   border-bottom: 1px solid var(--line-inv);
+}
+
+.nav-drawer.is-open {
+  display: grid;
+}
+
+.nav-drawer[hidden] {
+  display: none !important;
 }
 
 .nav-drawer a {
@@ -1049,6 +1057,14 @@ body.nav-open .nav-drawer a {
   }
   to {
     transform: translate3d(-18px, 12px, 0) scale(1.06);
+  }
+}
+
+@media (min-width: 901px) {
+  .nav-drawer,
+  .nav-drawer.is-open,
+  .nav-drawer[hidden] {
+    display: none !important;
   }
 }
 
