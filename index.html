@@ -25,24 +25,28 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#systems">Systems</a>
         <a href="#method">Method</a>
-        <a href="#start">Start</a>
+        <a href="#connect">Connect</a>
       </nav>
       <a class="nav-cta" href="#start">Work with Rogue</a>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="Intro">
-        <canvas class="hero-field" id="hero-field" aria-hidden="true"></canvas>
         <div class="hero-veil" aria-hidden="true"></div>
-        <div class="hero-copy">
-          <p class="brand-mark">Rogue</p>
-          <h1 class="hero-title">Grow the business. Cut the friction.</h1>
-          <p class="hero-lede">
-            Websites, automation, and AI that bring in more work - and take less time to run.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-solid" href="#start">Work with Rogue</a>
-            <a class="btn btn-ghost" href="#systems">See how</a>
+        <div class="hero-layout">
+          <div class="hero-copy">
+            <p class="brand-mark">Rogue</p>
+            <h1 class="hero-title">Grow the business. Cut the friction.</h1>
+            <p class="hero-lede">
+              Websites, automation, and AI that bring in more work - and take less time to run.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-solid" href="#start">Work with Rogue</a>
+              <a class="btn btn-ghost" href="#systems">See how</a>
+            </div>
+          </div>
+          <div class="hero-brain" aria-hidden="true">
+            <canvas class="brain-canvas" id="brain-canvas"></canvas>
           </div>
         </div>
       </section>
@@ -239,6 +243,62 @@
               You get an email confirmation. We review and reply with a next step - often a short teardown of what's costing you growth or hours.
             </p>
           </details>
+        </div>
+      </section>
+      <section class="connect" id="connect" aria-label="Subscribe or book a call">
+        <div class="connect-inner">
+          <div class="connect-copy">
+            <p class="eyebrow">Next step</p>
+            <h2>Subscribe for updates - or book a call.</h2>
+            <p class="section-lede">
+              Stay in the loop on growth systems, or jump straight to a conversation.
+            </p>
+          </div>
+
+          <div class="connect-panels">
+            <form class="connect-panel" id="subscribe-form" novalidate>
+              <p class="connect-label">Subscribe</p>
+              <p class="connect-hint">Occasional notes on growth and efficiency. No spam.</p>
+              <label class="field">
+                <span>Email</span>
+                <input
+                  id="subscribe-email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  maxlength="254"
+                  required
+                  placeholder="you@company.com"
+                />
+              </label>
+              <input
+                class="hp"
+                type="text"
+                name="company"
+                tabindex="-1"
+                autocomplete="off"
+                aria-hidden="true"
+              />
+              <button class="btn btn-solid" type="submit" id="subscribe-submit">Subscribe</button>
+              <p class="form-status" id="subscribe-status" role="status" aria-live="polite"></p>
+            </form>
+
+            <div class="connect-panel connect-panel-call">
+              <p class="connect-label">Book a call</p>
+              <p class="connect-hint">
+                15 minutes. We'll look at where you're leaking growth or time.
+              </p>
+              <a
+                class="btn btn-solid"
+                href="mailto:01@roguemodern.com?subject=Book%20a%20call%20with%20Rogue&body=Hi%20Mani%2C%0A%0AI'd%20like%20to%20book%20a%20short%20call%20about%20growing%20%2F%20tightening%20ops.%0A%0AName%3A%0ABusiness%3A%0A"
+              >
+                Book a call
+              </a>
+              <p class="connect-alt">
+                Or email <a href="mailto:01@roguemodern.com">01@roguemodern.com</a>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

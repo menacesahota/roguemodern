@@ -157,40 +157,54 @@ em {
   position: relative;
   min-height: min(88svh, 820px);
   display: grid;
-  align-items: end;
-  padding: calc(var(--nav-h) + 1.5rem) clamp(1.1rem, 4vw, 3rem) clamp(2rem, 4vw, 3rem);
+  align-items: center;
+  padding: calc(var(--nav-h) + 1.25rem) clamp(1.1rem, 4vw, 3rem) clamp(1.75rem, 4vw, 2.75rem);
   background: var(--bg-deep);
   color: var(--text-inv);
   overflow: hidden;
 }
 
-.hero-field {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  z-index: 0;
-}
-
 .hero-veil {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   background:
-    linear-gradient(180deg, rgba(12, 14, 12, 0.25) 0%, rgba(12, 14, 12, 0.15) 40%, rgba(12, 14, 12, 0.82) 100%),
-    radial-gradient(ellipse 80% 55% at 70% 20%, rgba(200, 240, 106, 0.12), transparent 55%);
+    radial-gradient(ellipse 55% 50% at 78% 48%, rgba(200, 240, 106, 0.1), transparent 60%),
+    radial-gradient(ellipse 70% 60% at 20% 80%, rgba(243, 244, 241, 0.04), transparent 55%);
   pointer-events: none;
 }
 
-.hero-copy {
+.hero-layout {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   width: min(1120px, 100%);
   margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(240px, 0.95fr);
+  gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.hero-copy {
   opacity: 0;
   transform: translateY(18px);
   animation: rise 1s var(--ease) 0.15s forwards;
+}
+
+.hero-brain {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.15 / 1;
+  max-height: min(52vh, 460px);
+  opacity: 0;
+  transform: translateY(14px);
+  animation: rise 1s var(--ease) 0.28s forwards;
+}
+
+.brain-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .brand-mark {
@@ -269,6 +283,7 @@ em {
 .method,
 .proof,
 .start,
+.connect,
 .faq {
   padding: clamp(2.25rem, 4.5vw, 3.75rem) clamp(1.1rem, 4vw, 3rem);
 }
@@ -281,7 +296,8 @@ em {
 .proof .proof-grid,
 .faq .section-head,
 .faq .faq-list,
-.start-inner {
+.start-inner,
+.connect-inner {
   width: min(1120px, 100%);
   margin-inline: auto;
 }
@@ -681,6 +697,93 @@ em {
   line-height: 1.55;
 }
 
+/* —— Connect —— */
+.connect {
+  background: var(--bg-deep);
+  color: var(--text-inv);
+  border-top: 1px solid var(--line-inv);
+}
+
+.connect .eyebrow,
+.connect .section-lede,
+.connect-hint,
+.connect-alt {
+  color: var(--muted-inv);
+}
+
+.connect-inner {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.connect-panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.connect-panel {
+  display: grid;
+  gap: 0.75rem;
+  align-content: start;
+  padding: 1.35rem;
+  border: 1px solid var(--line-inv);
+  background: rgba(243, 244, 241, 0.03);
+}
+
+.connect-label {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.connect-hint {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.connect-panel .field span {
+  color: var(--muted-inv);
+}
+
+.connect-panel .field input {
+  color: var(--text-inv);
+  border-bottom-color: var(--line-inv);
+}
+
+.connect-panel .field input::placeholder {
+  color: rgba(243, 244, 241, 0.28);
+}
+
+.connect-panel .field input:focus {
+  border-bottom-color: rgba(243, 244, 241, 0.55);
+}
+
+.connect-panel .form-status {
+  color: var(--muted-inv);
+}
+
+.connect-panel .form-status.is-ok {
+  color: var(--accent);
+}
+
+.connect-alt {
+  margin: 0.15rem 0 0;
+  font-size: 0.72rem;
+}
+
+.connect-alt a {
+  color: var(--accent);
+}
+
+.connect-panel-call .btn {
+  justify-self: start;
+  margin-top: 0.35rem;
+}
+
 /* —— Footer —— */
 .footer {
   display: grid;
@@ -731,7 +834,9 @@ em {
   .start-inner,
   .system-list,
   .steps,
-  .proof-grid {
+  .proof-grid,
+  .connect-panels,
+  .hero-layout {
     grid-template-columns: 1fr;
   }
 
@@ -748,8 +853,16 @@ em {
     padding-right: 0;
   }
 
-  .hero-copy {
-    max-width: none;
+  .hero-brain {
+    max-height: 320px;
+    order: -1;
+    aspect-ratio: 1.3 / 1;
+  }
+
+  .hero {
+    min-height: auto;
+    align-items: stretch;
+    padding-top: calc(var(--nav-h) + 0.75rem);
   }
 
   .brand-mark {
@@ -766,10 +879,6 @@ em {
   .btn {
     width: 100%;
   }
-
-  .system {
-    grid-template-columns: 2.5rem 1fr;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -778,6 +887,7 @@ em {
   }
 
   .hero-copy,
+  .hero-brain,
   .reveal {
     animation: none !important;
     opacity: 1 !important;
