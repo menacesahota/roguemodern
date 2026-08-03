@@ -108,7 +108,7 @@ if (canvas && !reduceMotion) {
 
 /* —— Scroll reveals —— */
 const revealEls = document.querySelectorAll(
-  ".stance, .section-head, .system, .steps li, .proof-grid > div, .start-copy, .start-form, .faq-list details"
+  ".stance-text, .stance-points, .section-head, .system, .steps li, .proof-grid > div, .start-copy, .start-form, .faq-list details"
 );
 revealEls.forEach((el) => el.classList.add("reveal"));
 

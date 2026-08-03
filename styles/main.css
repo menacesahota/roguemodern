@@ -146,13 +146,19 @@ em {
   border-color: var(--bg-deep);
 }
 
+/* —— Layout shell —— */
+.wrap {
+  width: min(1120px, 100%);
+  margin-inline: auto;
+}
+
 /* —— Hero —— */
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: min(88svh, 820px);
   display: grid;
   align-items: end;
-  padding: calc(var(--nav-h) + 2rem) clamp(1.1rem, 4vw, 3rem) clamp(2.5rem, 6vw, 4.5rem);
+  padding: calc(var(--nav-h) + 1.5rem) clamp(1.1rem, 4vw, 3rem) clamp(2rem, 4vw, 3rem);
   background: var(--bg-deep);
   color: var(--text-inv);
   overflow: hidden;
@@ -180,17 +186,18 @@ em {
 .hero-copy {
   position: relative;
   z-index: 2;
-  max-width: 18.5ch;
+  width: min(1120px, 100%);
+  margin-inline: auto;
   opacity: 0;
   transform: translateY(18px);
   animation: rise 1s var(--ease) 0.15s forwards;
 }
 
 .brand-mark {
-  margin: 0 0 1.1rem;
+  margin: 0 0 0.65rem;
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: clamp(3.6rem, 14vw, 8.5rem);
+  font-size: clamp(3rem, 10vw, 6.5rem);
   letter-spacing: -0.04em;
   line-height: 0.88;
   color: var(--text-inv);
@@ -203,22 +210,22 @@ em {
   font-size: clamp(1.55rem, 3.4vw, 2.55rem);
   letter-spacing: -0.035em;
   line-height: 1.12;
-  max-width: 16ch;
+  max-width: 18ch;
 }
 
 .hero-lede {
-  margin: 1.15rem 0 0;
-  max-width: 38ch;
+  margin: 0.85rem 0 0;
+  max-width: 42ch;
   color: var(--muted-inv);
-  font-size: 0.86rem;
-  line-height: 1.55;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
 }
 
 .btn {
@@ -263,12 +270,25 @@ em {
 .proof,
 .start,
 .faq {
-  padding: clamp(3.5rem, 9vw, 7rem) clamp(1.1rem, 4vw, 3rem);
+  padding: clamp(2.25rem, 4.5vw, 3.75rem) clamp(1.1rem, 4vw, 3rem);
+}
+
+.systems .section-head,
+.systems .system-list,
+.method .section-head,
+.method .steps,
+.proof .section-head,
+.proof .proof-grid,
+.faq .section-head,
+.faq .faq-list,
+.start-inner {
+  width: min(1120px, 100%);
+  margin-inline: auto;
 }
 
 .section-head {
-  max-width: 38rem;
-  margin-bottom: clamp(2rem, 5vw, 3.25rem);
+  max-width: 46rem;
+  margin-bottom: 1.5rem;
 }
 
 .eyebrow {
@@ -310,18 +330,57 @@ em {
 
 /* —— Stance —— */
 .stance {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: start;
+  max-width: calc(1120px + 2 * clamp(1.1rem, 4vw, 3rem));
+  margin-inline: auto;
   background: var(--bg);
   border-bottom: 1px solid var(--line);
 }
 
 .stance-text {
   margin: 0;
-  max-width: 28ch;
+  max-width: none;
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 3.2vw, 2.1rem);
+  font-size: clamp(1.25rem, 2.6vw, 1.85rem);
   font-weight: 500;
   letter-spacing: -0.03em;
   line-height: 1.25;
+}
+
+.stance-points {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.stance-points li {
+  display: grid;
+  gap: 0.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.stance-points li:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.stance-points strong {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.stance-points span {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
 }
 
 /* —— Systems —— */
@@ -331,21 +390,34 @@ em {
 
 .system-list {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border-top: 1px solid var(--line);
 }
 
 .system {
   display: grid;
-  grid-template-columns: 3.5rem 1fr;
-  gap: 0.35rem 1.25rem;
-  padding: 1.6rem 0;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+  padding: 1.35rem 1.25rem 1.35rem 0;
   border-bottom: 1px solid var(--line);
+  border-right: 1px solid var(--line);
+}
+
+.system:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.system:nth-child(1),
+.system:nth-child(2) {
+  padding-left: 0;
+  padding-right: 1.25rem;
 }
 
 .system-id {
-  margin: 0.2rem 0 0;
-  grid-row: 1 / span 3;
+  margin: 0;
+  grid-row: auto;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   color: var(--muted);
@@ -354,22 +426,22 @@ em {
 .system h3 {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
   font-weight: 600;
   letter-spacing: -0.03em;
 }
 
 .system p {
   margin: 0;
-  max-width: 46ch;
+  max-width: none;
   color: var(--muted);
-  font-size: 0.86rem;
-  line-height: 1.55;
+  font-size: 0.84rem;
+  line-height: 1.5;
 }
 
 .system-meta {
-  margin-top: 0.35rem !important;
-  font-size: 0.68rem !important;
+  margin-top: 0.2rem !important;
+  font-size: 0.64rem !important;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(16, 18, 16, 0.4) !important;
@@ -391,16 +463,27 @@ em {
   margin: 0;
   padding: 0;
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   border-top: 1px solid var(--line-inv);
 }
 
 .steps li {
   display: grid;
-  grid-template-columns: 4rem 1fr;
-  gap: 1rem;
-  padding: 1.6rem 0;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+  padding: 1.25rem 1.25rem 1.25rem 0;
   border-bottom: 1px solid var(--line-inv);
+  border-right: 1px solid var(--line-inv);
+}
+
+.steps li:last-child {
+  border-right: 0;
+  padding-right: 0;
+}
+
+.steps li:not(:last-child) {
+  padding-right: 1.25rem;
 }
 
 .step-n {
@@ -418,12 +501,12 @@ em {
   letter-spacing: -0.02em;
 }
 
+.system {
+  min-height: 0;
+}
+
 .steps p {
-  margin: 0;
-  max-width: 48ch;
-  color: var(--muted-inv);
-  font-size: 0.86rem;
-  line-height: 1.55;
+  max-width: none;
 }
 
 /* —— Proof —— */
@@ -434,42 +517,45 @@ em {
 .proof-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 1rem 1.5rem;
   border-top: 1px solid var(--line);
-  padding-top: 2rem;
+  padding-top: 1.35rem;
 }
 
 .proof-num {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-size: clamp(1.8rem, 4vw, 2.75rem);
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 1;
 }
 
 .proof-label {
-  margin: 0.65rem 0 0;
-  max-width: 16ch;
+  margin: 0.45rem 0 0;
+  max-width: 22ch;
   color: var(--muted);
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   line-height: 1.4;
 }
 
 /* —— Start / form —— */
 .start {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: clamp(2rem, 5vw, 4rem);
-  align-items: start;
   background: var(--bg-panel);
   border-top: 1px solid var(--line);
+}
+
+.start-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(1.5rem, 4vw, 2.75rem);
+  align-items: start;
 }
 
 .start-form {
   display: grid;
   gap: 1rem;
-  padding: 1.5rem;
+  padding: 1.35rem;
   background: var(--bg);
   border: 1px solid var(--line);
 }
@@ -641,13 +727,25 @@ em {
     display: none;
   }
 
-  .start {
+  .stance,
+  .start-inner,
+  .system-list,
+  .steps,
+  .proof-grid {
     grid-template-columns: 1fr;
   }
 
-  .proof-grid {
-    grid-template-columns: 1fr;
-    gap: 1.75rem;
+  .system,
+  .steps li {
+    border-right: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .system:nth-child(1),
+  .system:nth-child(2),
+  .steps li:not(:last-child) {
+    padding-right: 0;
   }
 
   .hero-copy {
@@ -655,7 +753,7 @@ em {
   }
 
   .brand-mark {
-    font-size: clamp(3.2rem, 18vw, 5.5rem);
+    font-size: clamp(3rem, 16vw, 5rem);
   }
 }
 
