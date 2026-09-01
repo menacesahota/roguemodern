@@ -192,3 +192,28 @@ Excel Steel Services,https://excelsteelservices.co.uk/,Dunbar / Edinburgh fringe
 AD Metal Fabrications,https://www.admetalfabrications.co.uk/,Livingston,Metalworkers / structural steel - relatively current,,enquiries@admetalfabrications.co.uk,researched,,,,Wave 10 backlog
 Aberdeen Sheet Metal,https://aberdeensheetmetal.com/,Westhill / Aberdeen,Sheet metal / HVAC ductwork - relatively current,,info@aberdeensheetmetal.com,researched,,,,Wave 10 backlog
 EVM,https://www.evm.co.uk/,Glasgow,Joinery / signage / large format - relatively current,,sales@evm.co.uk,researched,,,,Wave 10 backlog
+GB Engineering,http://www.gb-engineering.co.uk/,Derry / Maydown,Homepage still says NEW Inhouse Lazer Cutting Facility; live Fax 028 7186 1100 on table/font layout,,info@gb-engineering.co.uk,draft,,,,Wave 11 NI
+Coates Engineering,http://www.coates-engineering.co.uk/,Bangor / Co Down,Live Fax 028 9147 0652; nested font tags and table layout still live,,sales@coates-engineering.co.uk,draft,,,,Wave 11 NI
+GPS Colour Graphics,https://gpscolour.co.uk/,Belfast,Site still loads html5shiv from googlecode SVN trunk for IE,,sales@gpscolour.co.uk,draft,,,,Wave 11 NI
+Balcas,https://balcas.com/,Enniskillen,Site still loads html5shiv; contact still publishes live Fax +44 (0) 28 6632 4082,,info@balcas.com,draft,,,,Wave 11 NI
+Boxpak,https://www.boxpak.co.uk/,Newtownabbey / Belfast,Contact strip still lists live Fax 028 9086 6731,,info@boxpak.co.uk,draft,,,,Wave 11 NI
+Mash Direct,https://www.mashdirect.com/,Comber,Footer and contact still publish live Fax +44 (0) 28 9187 0628,,enquiries@mashdirect.com,draft,,,,Wave 11 NI
+Beggs & Partners,https://www.beggsandpartners.com/,Belfast,Live site still loads IE8 html5shiv shim,,tradesalesbelfast@beggsandpartners.com,draft,,,,Wave 11 NI
+McKibbin Commercial,https://www.mckibbin.co.uk/,Belfast,Site still loads html5shiv for IE8 and below,,property@mckibbin.co.uk,draft,,,,Wave 11 NI
+Pinpoint Property,https://www.pinpointproperty.com/,Belfast,Site still loads /js/html5shiv.js behind IE conditional,,contact@pinpointproperty.com,draft,,,,Wave 11 NI
+Simon Brien,https://www.simonbrien.com/,Belfast,Site still loads /js/html5shiv.js for old Internet Explorer,,southbelfast@simonbrien.com,draft,,,,Wave 11 NI
+Wright Engineering,https://www.wrightengineering.co.uk/,Magherafelt,Footer still locked on Copyright 2015; site still loads googlecode html5shiv,,,researched,,,,Wave 11 backlog
+Belfast Foiling,https://www.belfastfoiling.com/,Newtownabbey,Live pages still use legacy font markup for a print finisher,,info@belfastfoiling.com,researched,,,,Wave 11 backlog
+Clandeboye Estate,https://www.clandeboye.co.uk/,Bangor,Site still loads html5shiv printshiv from CDN,,mail@clandeboye.co.uk,researched,,,,Wave 11 backlog
+Templeton Robinson,https://www.templetonrobinson.com/,Belfast,Site still loads /js/html5shiv.js; form-only contact,,,researched,,,,Wave 11 backlog
+Miles-Ash Limited,https://www.miles-ashlimited.co.uk/,Newtownabbey,HVAC / ductwork - relatively current,,enquiries@milesash.com,researched,,,,Wave 11 backlog
+GAE Ltd,https://gaeltd.co.uk/,Newtownards,Stainless fabrication - relatively current,,info@gaeltd.co.uk,researched,,,,Wave 11 backlog
+Print Tec,https://www.printtecni.com/,Newtownabbey,Commercial printers - relatively current,,john@printtec.org.uk,researched,,,,Wave 11 backlog
+ESL Engineering,https://www.eslengineering.co.uk/,Coleraine,Engineering specialists - relatively current,,sales@eslengineering.co.uk,researched,,,,Wave 11 backlog
+Artizan Fabrications,https://www.artizanfabrications.com/,Northern Ireland,Metal fabrication - relatively current,,info@artizanfabrications.com,researched,,,,Wave 11 backlog
+Larne Engineering,https://www.larneengineering.com/,Larne,Engineering / fabrication - relatively current,,info@larneengineering.com,researched,,,,Wave 11 backlog
+Metalcraft Engineering,https://www.metalcrafteng.com/,Belfast,Steel / waterjet - relatively current,,info@metalcrafteng.com,researched,,,,Wave 11 backlog
+Techfab Engineering,https://www.techfabengineering.com/,Belfast,Sheet metal fabrication - relatively current,,info@techfabengineering.com,researched,,,,Wave 11 backlog
+Hamilton Metal Forming,https://www.hamiltonmetalforming.com/,Cookstown,Roofing / cladding pressings - relatively current,,sales@hamiltonmetalforming.com,researched,,,,Wave 11 backlog
+Print Direct NI,https://www.printdirectni.com/,Belfast,Commercial printing - relatively current,,hello@printdirectni.com,researched,,,,Wave 11 backlog
+Print NI,https://www.printni.com/,Northern Ireland,Printers - relatively current,,Stephen@printni.com,researched,,,,Wave 11 backlog
