@@ -1,0 +1,62 @@
+[
+  {
+    "business": "Prestige Packaging",
+    "to": "sales@prestigepkg.co.uk",
+    "subject": "Quick note on Prestige Packaging's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Prestige Packaging stood out.\n\nPlympton carton and box manufacturers on Bell Close - and prestigepkg.co.uk still opens with lt-ie9 / lt-ie8 / lt-ie7 classes, loads html5shiv.js and respond.min.js for old IE, pulls jquery 1.5.2, and locks the viewport at width=1105. Serious South West packaging capacity; a front end still wired for browsers Microsoft retired years ago.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Bennett Jones and Co",
+    "to": "enquiries@bjandco.co.uk",
+    "subject": "Quick note on Bennett Jones and Co's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Bennett Jones and Co stood out.\n\nBodmin and St Austell chartered accountants - and bennettjonesandco.co.uk still pulls html5.js from html5shiv.googlecode.com/svn/trunk, loads jquery-1.7.1.min.js, and publishes Fax - 01726 69878 on the St Austell office block. Established Cornwall practice; a shopfront still depending on a long-retired Google Code polyfill.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Cornwall Homeseekers",
+    "to": "N.Collenette@cornwall-homeseekers.co.uk",
+    "subject": "Quick note on Cornwall Homeseekers' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Cornwall Homeseekers stood out.\n\nTruro lettings agents trading since 1986 - and cornwall-homeseekers.co.uk still lists Fax 01872 273432 beside Tel 01872 262288 on Contact-Us, while the live site still loads jquery-1.9.1.min.js, html5shiv.js, and an IE8 Alert banner. Serious Cornwall lettings book; a front end still warning visitors about Internet Explorer 8.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Cornish Stairways",
+    "to": "mikejordan@cornishstairways.co.uk",
+    "subject": "Quick note on Cornish Stairways' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Cornish Stairways stood out.\n\nPenryn staircase manufacturers on Kernick Industrial Estate - and cornishstairways.com still opens with lt-ie9 / lt-ie8 / lt-ie7 conditional classes and pulls html5.js from html5shiv.googlecode.com/svn/trunk. Real workshop capacity for bespoke stair work; a live site still scaffolding for browsers Microsoft retired years ago.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Westcountry Fabrication",
+    "to": "sales@westcountrygroup.co.uk",
+    "subject": "Quick note on Westcountry Fabrication's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Westcountry Fabrication stood out.\n\nPlymouth metal fabricators covering Devon and Cornwall - and westcountryfabrication.co.uk still loads modernizr-2.5.3-respond-1.1.0.min.js plus jquery-1.10.1.min.js, keeps Copyright 2014 in the footer, and publishes Fax: 08723 527 204 beside Tel: 01752 338990. Real structural and architectural metalwork capacity; a shopfront still carrying 2014-era IE scaffolding and a live fax line.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Torbay Steel Fabrications",
+    "to": "david@torbaysteel.com",
+    "subject": "Quick note on Torbay Steel Fabrications' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Torbay Steel Fabrications stood out.\n\nPaignton steel fabricators on the Miglo Industrial Estate since 1993 - and torbaysteelfabrications.co.uk still declares an XHTML 1.0 Strict doctype, with Copyright Torbay Steel Fabrications 2010 locked in the footer. Real gates, railings and structural metalwork capacity across Torbay; a front end that never left the XHTML era.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Grylls and Paige",
+    "to": "law@grylls-paige.co.uk",
+    "subject": "Quick note on Grylls and Paige's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Grylls and Paige stood out.\n\nRedruth solicitors on West End - and gryllsandpaige.co.uk still loads Concrete5 html5-shiv.js and respond.js inside an lt IE 9 conditional, while the contact page still publishes Fax 01209 219677 beside Tel 01209 215261. Established Cornwall practice; a contact block that still treats fax as day-one infrastructure.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Nalders Solicitors",
+    "to": "postmaster@nalders.co.uk",
+    "subject": "Quick note on Nalders Solicitors' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Nalders Solicitors stood out.\n\nCornwall solicitors with offices from Truro to Penzance - and nalders.co.uk still publishes live Fax numbers on every branch block, including Fax: (01872) 242424 in Truro and Fax: (01736) 364054 in Penzance. Serious multi-office West Country firm; contact strips that still treat fax as current infrastructure.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Toulsons Accountancy",
+    "to": "Wendy@toulsonsaccountancy.co.uk",
+    "subject": "Quick note on Toulsons Accountancy's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Toulsons Accountancy stood out.\n\nNewton Abbot accountants covering Torbay and South Devon - and toulsonsaccountancy.co.uk still lists Telephone/Fax: 01626 873065 as a single contact line. Established local practice; a homepage contact strip that still treats fax as interchangeable with the main telephone number.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Bond Joinery",
+    "to": "info@bondjoinery.co.uk",
+    "subject": "Quick note on Bond Joinery's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Bond Joinery stood out.\n\nTotnes joiners serving South Devon - and bondjoinery.co.uk still runs an old jquery camera slider stack and keeps Copyright 2017 in the footer on an otherwise thin shopfront. Real workshop joinery capacity; a front end that never moved past a 2010s slideshow template.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  }
+]
