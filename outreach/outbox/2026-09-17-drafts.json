@@ -1,0 +1,62 @@
+[
+  {
+    "business": "Emmet J Kelly and Co",
+    "to": "law@emmetjkellysolicitors.com",
+    "subject": "Quick note on Emmet J Kelly and Co's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Emmet J Kelly and Co stood out.\n\nBanbridge solicitors on Bridge Street - and emmetjkelly.com still pulls html5.js from html5shiv.googlecode.com/svn/trunk, a Google Code polyfill Microsoft-era browsers needed years ago. Established County Down practice; a front end still depending on a long-retired repo.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Gerard Maguire Solicitors",
+    "to": "info@gmaguiresolicitors.co.uk",
+    "subject": "Quick note on Gerard Maguire Solicitors' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Gerard Maguire Solicitors stood out.\n\nPortadown solicitors on Thomas Street - and gmaguiresolicitors.co.uk still loads html5shiv 3.7.2 plus jquery 1.10.1, while the contact page still publishes Fax: (028) 3839 3489 beside the main telephone number. Serious Mid Ulster firm; a shopfront still wired for old IE and a live fax line.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Francis Hanna and Co",
+    "to": "info@fhanna.co.uk",
+    "subject": "Quick note on Francis Hanna and Co's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Francis Hanna and Co stood out.\n\nBelfast solicitors - and fhanna.co.uk still loads jquery 1.10.2 and publishes Fax: +44 (0)28 9024 4215 on the live contact block. Established city practice; a front end still carrying 2013-era jQuery and a fax number treated as day-one infrastructure.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Worthingtons Solicitors",
+    "to": "info@worthingtonslaw.co.uk",
+    "subject": "Quick note on Worthingtons Solicitors' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Worthingtons Solicitors stood out.\n\nBelfast and Newtownards solicitors - and worthingtonslaw.co.uk still loads html5shiv 3.7.2 and Respond.js for old IE, while Contact Us still lists F: 028 9043 4016 beside the Belfast telephone line. Multi-office NI firm; a contact strip that still treats fax as current infrastructure.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Jones Estate Agents",
+    "to": "info@jonesestateagents.com",
+    "subject": "Quick note on Jones Estate Agents' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Jones Estate Agents stood out.\n\nLurgan estate agents - and jonesestateagents.com still opens with lt-ie10 / lt-ie9 / lt-ie8 / lt-ie7 classes, loads html5shiv 3.7.3, respond.min.js, and modernizr-2.6.2. Busy Mid Ulster agency; a front end still scaffolding for browsers Microsoft retired years ago.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "McFarland Graham McCombe",
+    "to": "mgm@nilaw.co.uk",
+    "subject": "Quick note on McFarland Graham McCombe's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and McFarland Graham McCombe stood out.\n\nLisburn solicitors on Bachelors Walk since 1981 - and mgmsolicitors.com still loads html5shiv.min.js and publishes Fax: 028 9260 7472 beside Tel: 028 9267 4447. Serious local firm; a contact block that still treats fax as day-one infrastructure.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Best Property Services",
+    "to": "info@bestpropertyservices.com",
+    "subject": "Quick note on Best Property Services' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Best Property Services stood out.\n\nNewry estate agents - and bestpropertyservices.com still opens with lt-ie10 / lt-ie9 / lt-ie8 / lt-ie7 classes and loads html5shiv 3.7.3 plus respond.min.js for old IE. Active Newry and Mourne agency; a shopfront still wired for browsers Microsoft retired years ago.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "OKane Brothers",
+    "to": "info@okanebrothers.co.uk",
+    "subject": "Quick note on OKane Brothers' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and OKane Brothers stood out.\n\nOmagh estate agents - and okanebrothers.co.uk still opens with lt-ie10 / lt-ie9 / lt-ie8 / lt-ie7 classes and loads html5shiv 3.7.3 plus respond.min.js for old IE. Established Tyrone agency; a front end still scaffolding for browsers Microsoft retired years ago.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Farrell and Farrell",
+    "to": "info@farrellca.com",
+    "subject": "Quick note on Farrell and Farrell's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Farrell and Farrell stood out.\n\nHilltown / Newry chartered accountants on Main Street - and farrellca.com still publishes Fax: 028 4063 2648 on the live contact page beside Tel: 028 4063 0876. Cross-border practice with real capacity; a contact strip that still treats fax as current infrastructure.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Felix OHare",
+    "to": "admin@felixohare.com",
+    "subject": "Quick note on Felix OHare's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Felix OHare stood out.\n\nNewry construction and civil engineering firm - and felixohare.com still loads html5shiv.js plus jquery-1.9.1.js on the live site. Serious regional contractor; a front end still carrying 2013-era jQuery and old-IE shiv scaffolding.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  }
+]
