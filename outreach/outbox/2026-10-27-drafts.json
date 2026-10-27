@@ -1,0 +1,62 @@
+[
+  {
+    "business": "Hughes & Company",
+    "to": "nicola@hughesand.co.uk",
+    "subject": "Quick note on Hughes & Company's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Hughes & Company stood out.\n\nTring solicitors on Frogmore Street - and hughesand.co.uk still ships as XHTML 1.0 Transitional with no mobile viewport, and the contact page still publishes fax: 01442 890 772 beside nicola@hughesand.co.uk. Family-run High Street practice; a front end frozen on an early-2000s XHTML stack with a live fax route.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Acculith",
+    "to": "info@acculith.co.uk",
+    "subject": "Quick note on Acculith's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Acculith stood out.\n\nPrint and design specialists - and acculith.co.uk still ships with live HTTrack Website Copier comments dated 23 Apr 2020 in the HTML, still runs WordPress 5.3.2, and still carries an <!--[if IE]> block on the homepage beside info@acculith.co.uk. Serious trade printer; a public site that still reads like a frozen 2020 mirror rather than a maintained front end.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Abode Town & Country",
+    "to": "info@abodetc.co.uk",
+    "subject": "Quick note on Abode Town & Country's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Abode Town & Country stood out.\n\nIndependent Royston and Baldock estate agents - and abodetc.co.uk still declares an XHTML namespace on the root html tag, still loads html5shiv 3.7.3 behind an lt IE 9 block, and still carries a plain <!--[if IE]> hook on the live homepage. Established Guild member on your patch; a front end still defending Internet Explorer polyfills.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Stuart Fantham & Company",
+    "to": "legal@stuartfantham.co.uk",
+    "subject": "Quick note on Stuart Fantham's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Stuart Fantham stood out.\n\nWendover and Beaconsfield solicitors since 1992 - and stuartfantham.co.uk still opens with an <!--[if lte IE 7]> block, and still publishes Fax 01296 620 600 and Fax 01494 680003 on the live office strips beside legal@stuartfantham.co.uk. Long-standing Bucks practice; a front end still defending IE7-era hooks with live fax routes on both offices.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Excel Roofing",
+    "to": "info@roofinghertfordshire.co.uk",
+    "subject": "Quick note on Excel Roofing's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Excel Roofing stood out.\n\nHemel Hempstead roofing and UPVC on Chaulden House Gardens - and roofinghertfordshire.co.uk still opens with IE 6, IE 7 and IE 8 conditional html classes, plus an lt IE 9 script block, on the live homepage beside info@roofinghertfordshire.co.uk. Established local roofing firm; a front end still defending browser forks from the mid-2000s.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "SW Management Accountants",
+    "to": "info@swmaccountants.co.uk",
+    "subject": "Quick note on SW Management Accountants' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and SW Management Accountants stood out.\n\nAmersham accountants on Stanley Hill - and swmaccountants.co.uk still loads html5shiv.js behind an <!--[if lte IE 8]> block on the live homepage beside info@swmaccountants.co.uk. Twenty-plus years serving Bucks small businesses; a front end still polyfilling Internet Explorer 8.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Westmews Trade Print",
+    "to": "lbrown649@virginmedia.com",
+    "subject": "Quick note on Westmews Trade Print's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Westmews Trade Print stood out.\n\nStevenage trade printers on The Lawns with 50+ years behind the work - and westmewsprinters.co.uk still points day-to-day enquiries to a public lbrown649@virginmedia.com mailbox on the live site. Serious Herts technical printer; a front end that still routes trade contact through a consumer Virgin Media address.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Hine Solicitors",
+    "to": "enquiries@hinesolicitors.com",
+    "subject": "Quick note on Hine Solicitors' website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Hine Solicitors stood out.\n\nBeaconsfield solicitors - and hinesolicitors.com still loads html5shiv.js behind an lt IE 9 block on the live homepage beside enquiries@hinesolicitors.com. Established Bucks firm; a front end still shipping Internet Explorer polyfills on a public marketing site.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Braddon & Snow",
+    "to": "mail@braddonsnow.co.uk",
+    "subject": "Quick note on Braddon & Snow's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Braddon & Snow stood out.\n\nHoddesdon, Broxbourne and Hertford solicitors since 2008 - and braddonsnow.co.uk still loads jquery/1.11.1 and still publishes Fax: 01992 446 367 beside mail@braddonsnow.co.uk on the live site. Growing High Street practice; a front end still on a mid-2010s jQuery stack with a live fax line.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Andrew J Fraser",
+    "to": "enquiries@ajfraser.co.uk",
+    "subject": "Quick note on Andrew J Fraser's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Andrew J Fraser stood out.\n\nMarlow and Gerrards Cross accountants since 1985 - and ajfraser.co.uk still publishes a live mailto:enquireis@ajfraser.co.uk link (misspelled) on the homepage beside the correct enquiries@ address. Long-standing Thames Valley practice; a contact path with a typo baked into the live mailto.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  }
+]
