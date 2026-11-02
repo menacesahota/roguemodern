@@ -1,0 +1,62 @@
+[
+  {
+    "business": "PM & G",
+    "to": "info@pm-g.co.uk",
+    "subject": "Quick note on PM & G's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and PM & G stood out.\n\nKneesall / Newark chartered accountants at Mainwood Farm - and pm-g.co.uk still ships as XHTML 1.0 Transitional with no mobile viewport, still opens with <!--[if IE 7]> and <!--[if lte IE 6]> blocks in the live nav, and the contact page still publishes F: 01636 636344 beside T: 01636 636343. Long-standing Notts practice; a public site still defending mid-2000s Internet Explorer forks with a live fax route.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "J Gamgee Accountancy",
+    "to": "james@jgamgee.co.uk",
+    "subject": "Quick note on J Gamgee Accountancy's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and J Gamgee Accountancy stood out.\n\nNewark-on-Trent accountants - and jgamgee.co.uk still ships as XHTML 1.0 Transitional with no mobile viewport on the live homepage. Local SME practice; a front end still frozen on an early-2000s XHTML stack.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Barnett and Shaw Sheetmetal",
+    "to": "phil@barnettandshaw.co.uk",
+    "subject": "Quick note on Barnett and Shaw Sheetmetal's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Barnett and Shaw Sheetmetal stood out.\n\nNarborough / Leicester sheet-metal fabricators on Coventry Road - and barnettandshaw.co.uk still ships as XHTML 1.0 Transitional with no mobile viewport, and still displays the old W3C Valid XHTML 1.0 badge on the live homepage. Serious local fabrication firm; a marketing site still wearing an early-2000s XHTML validation sticker.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Libra Labels",
+    "to": "sales@libralabelsandprinting.co.uk",
+    "subject": "Quick note on Libra Labels's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Libra Labels stood out.\n\nKettering label and commercial printers on Telford Way - and libralabelsandprinting.co.uk still ships as XHTML 1.0 Transitional on the live homepage. Established Northants trade printer; a front end still on an early-2000s XHTML doctype.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Express Assemblies Ltd",
+    "to": "expressassembliesltd@btopenworld.com",
+    "subject": "Quick note on Express Assemblies Ltd's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Express Assemblies Ltd stood out.\n\nEast Goscote / Leicester wire and cable assembly suppliers - and expressassembliesltd.co.uk still opens with <!--[if lt IE 9]> and html5shiv, still publishes Fax 0116 260 4030 on the live contact page, and still routes mail to expressassembliesltd@btopenworld.com. Serious Midlands assembly firm; a public site still defending Internet Explorer 8-era forks with a live fax line and a BT Openworld mailbox.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Flexpress",
+    "to": "sales@flexpress.co.uk",
+    "subject": "Quick note on Flexpress's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Flexpress stood out.\n\nLeicester trade printers (LE4) - and flexpress.co.uk still opens with <!--[if IE 7]>, <!--[if IE 8]>, <!--[if lt IE 9]> and <!--[if lte IE 9]> blocks on the live site. Established local print house; a marketing stack still shipping a full set of mid-2000s Internet Explorer conditional comments.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "MCE Engineering",
+    "to": "info@mcelimited.co.uk",
+    "subject": "Quick note on MCE Engineering's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and MCE Engineering stood out.\n\nDerby sheet-metal and fabrication engineers on Parcel Terrace - and mcelimited.co.uk still loads jquery-1.7.1, and still opens with <!--[if IE 7]> and <!--[if lt IE 7]> blocks on the live site. Serious East Midlands fabricator; a front end still on a 2011-era jQuery stack with Internet Explorer conditionals.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Towcester Family Law",
+    "to": "law@tflp.co.uk",
+    "subject": "Quick note on Towcester Family Law's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Towcester Family Law stood out.\n\nTowcester family solicitors on Watling Street East - and familysolicitornorthampton.co.uk still loads jquery/1.8.2, still opens with <!--[if lte IE 6]>, and the live contact page still publishes Fax: 01327 358460 beside law@tflp.co.uk. Local Northants practice; a Drupal front end still on a 2012-era jQuery stack with an IE6 fork and a live fax route.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Willsons Printers",
+    "to": "info@willsons.com",
+    "subject": "Quick note on Willsons Printers's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Willsons Printers stood out.\n\nNewark printers at Highlander House on Cross Street - family print house since 1864 - and willsons.com still loads jquery/1.8.3 on the live site. Long-standing Notts print group; a marketing front end still on a 2012-era jQuery stack.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  },
+  {
+    "business": "Nigel Ricks",
+    "to": "enquiries@nigelricks.com",
+    "subject": "Quick note on Nigel Ricks's website",
+    "bodyText": "Hi,\n\nI'm Mani from Rogue.\n\nWe look for solid businesses that still look stuck online - and Nigel Ricks stood out.\n\nLoughborough and Coalville chartered accountants - and nigelricks.com still opens with <!--[if !(IE 6) | !(IE 7) | !(IE 8) ]>, and the live contact page still publishes Fax: (01509) 828979 beside enquiries@nigelricks.com. Dual-office Leics practice; a public site still shipping Internet Explorer 6/7/8 conditionals with a live fax line.\n\nIf useful, I'll send a short 3-point teardown over email - what's dated, what's costing you, and the first fix. No call required.\n\nReply YES and I'll send it."
+  }
+]
